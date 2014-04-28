@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html manifest="mp3.manifest">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>音乐盒</title>
+		<link rel="icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="resources/mp3.css" />
+	</head>
+	<body scroll="no" onselectstart="return false">
+		<!-- Flash Player Start -->
+		<div id="player">
+			<div id="swfContainer">
+			</div>
+		</div>
+		<!-- Flash Player End -->
+		<div class="box">
+			<div class="wrapper">
+				<div class="header">
+					<div id="logo"></div>
+					<div id="skinBT">换肤</div>
+				</div>
+				<div class="container">
+					<!-- Left List Type Start -->
+					<div class="left">
+						<div class="leftType first leftSelected" data-type="temp">
+							<span class="leftIcon temp"></span>临时列表<span class="soundICON"></span>
+						</div>
+						<div class="leftType" data-type="record">
+							<span class="leftIcon record"></span>播放记录<span class="soundICON"></span>
+						</div>
+						<div class="leftType" data-type="most">
+							<span class="leftIcon most"></span>我最常听<span class="soundICON"></span>
+						</div>
+					</div>
+					<!-- Left List Type End -->
+					<!-- Music List Start -->
+					<div class="center" id="centerBox">
+						<div class="top">
+							<div class="title">歌曲</div>
+							<div class="artist">歌手</div>
+						</div>
+						<div id="musicList">
+						</div>
+						<div class="bar">
+							<div id="selectAll"><span class="selectAll"></span>全选</div>
+							<div id="delete"></div>
+							<div id="count"></div>
+						</div>
+					</div>
+					<!-- Music List End -->
+					<!-- Avatar & Lrc Start -->
+					<div class="right">
+						<div class="avatar">
+							<img id="avatar" width="135" src="resources/images/avatar.jpg" />
+						</div>
+						<div class="split"></div>
+						<div id="lrcBox"></div>
+						<div id="splitBT"></div>
+					</div>
+					<!-- Avatar & Lrc End -->
+				</div>
+				<div class="footer">
+					<div class="ctrol">
+						<div id="pre" title="上一首[←]"></div>
+						<div class="play"></div>
+						<div id="next" title="下一首[→]"></div>
+					</div>
+					<div class="ctrolInfo">
+						<div id="playInfo"></div>
+						<div id="musicProgressBox">
+							<div id="musicProgress">
+								<div id="loadProgress"></div>
+								<div id="playProgress"></div>
+								<div id="musicRadio"></div>
+							</div>
+						</div>
+					</div>
+					<div class="ctrolOther">
+						<div id="timmer"></div>
+						<div class="random" title="随机播放" data-type="random"></div>
+						<div class="loopOne" title="单曲播放" data-type="one"></div>
+						<div class="loopAll loopAllSelect" title="循环播放" data-type="all"></div>
+						<div class="sound">
+							<div id="soundIcon" title="静音"></div>
+							<div id="soundBox">
+								<div id="soundPercent">
+									<div id="soundProgress"></div>
+									<div id="soundRadio"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="userdataBox"></div>
+		<div id="markLayer"></div>
+		<div id="noPlayer">
+				<div style="text-align:center;padding-top:200px;">
+					<div>您没有安装flash播放器或flash播放器版本过低. 请点击下方链接安装.</div>
+					<a href="http://www.adobe.com/go/getflashplayer"><img 
+		src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" 
+		alt="Get Adobe Flash player" /></a>
+				</div>
+		</div>
+		<!-- Server Path -->
+		<script type="text/javascript">
+		var CONFIG = (function(){
+			return {
+				SERVER: "data/"
+			}	
+		})();
+		</script>
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script src="mp3.js"></script>
+	</body>
+</html>
