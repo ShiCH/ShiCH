@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# VERSION 2014/04/29_14:25:24
+# VERSION 2014/04/29_14:46:03
 
 # 
 CACHE:
@@ -16,6 +16,7 @@ resources/images/background.png
 resources/images/blue.gif
 resources/images/blue.png
 resources/images/left.png
+resources/images/loading.gif
 resources/images/red.gif
 resources/images/red.png
 resources/images/right.png
