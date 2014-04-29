@@ -1,5 +1,4 @@
 <?xml version="1.0"?>
   <cross-domain-policy>
-    <allow-access-from domain="*.gome.com.cn" />
-    <allow-access-from domain="*.gomeart.com" />
+    <allow-access-from domain="*.mvbox.cn" />
   </cross-domain-policy>
