@@ -1,0 +1,29 @@
+CACHE MANIFEST
+
+# VERSION 2014/04/29_12:47:12
+
+# 
+CACHE:
+mp3.html
+js/jquery-1.10.2.min.js
+mp3.js
+
+resources/swf/mp3.swf
+resources/mp3.css
+resources/images/avatar.jpg
+resources/images/background.gif
+resources/images/background.png
+resources/images/blue.gif
+resources/images/blue.png
+resources/images/left.png
+resources/images/red.gif
+resources/images/red.png
+resources/images/right.png
+
+
+# 
+NETWORK:
+*
+
+# 
+#FALLBACK:
